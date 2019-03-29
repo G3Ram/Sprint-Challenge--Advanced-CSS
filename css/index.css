@@ -222,6 +222,11 @@ footer {
 .home {
   padding-top: 100px;
 }
+@media (max-width: 500px) {
+  .home {
+    width: 100%;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -240,6 +245,10 @@ footer {
   border-radius: 5px;
   max-width: 112%;
   height: auto;
+  transition: 1s ease-in-out;
+}
+.home .intro img:hover {
+  transform: translate(3em, 3em);
 }
 @media (max-width: 500px) {
   .home .intro img {
@@ -362,9 +371,4 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-@media (max-width: 500px) {
-  .home {
-    width: 100%;
-  }
 }

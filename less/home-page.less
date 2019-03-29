@@ -1,6 +1,10 @@
 // Home Content
 
 .home {
+  @media @phone {
+    width: 100%;
+  }
+  // added padding for fixed navigation pane
   padding-top: 100px;
   .intro {
     h2 {
@@ -23,6 +27,12 @@
       max-width: 112%;
       height: auto;
 
+      // for animation
+      transition: 1s ease-in-out;
+      &:hover {
+        transform: translate(3em, 3em);
+      }
+      // for animation - ending
       @media @phone {
         width: 100%;
         height: auto;
@@ -126,7 +136,4 @@
       } // img
     } //walk-img
   } // walk
-  @media @phone {
-    width: 100%;
-  }
 } // home
