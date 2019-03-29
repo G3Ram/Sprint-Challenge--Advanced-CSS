@@ -180,6 +180,11 @@ p {
   align-items: center;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .main-navigation .nav-container {
+    justify-content: baseline;
+  }
+}
 .main-navigation .nav-container h1 {
   font-size: 4rem;
 }
